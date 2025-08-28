@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./Faq.module.css";
+import { Fade } from "react-awesome-reveal";
+
 
 const faqs = [
   {
@@ -39,7 +41,12 @@ export default function Faq() {
 
   return (
     <section className={styles.faqSection}>
+            <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+      
       <h2 className={styles.title}>Frequently asked questions</h2>
+      </Fade>
+                  <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+
       <div className={styles.faqList}>
         {faqs.map((faq, index) => (
           <div key={index} className={styles.faqItem}>
@@ -62,6 +69,7 @@ export default function Faq() {
           </div>
         ))}
       </div>
+      </Fade>
     </section>
   );
 }

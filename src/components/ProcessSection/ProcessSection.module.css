@@ -1,11 +1,10 @@
 .section {
-  padding: 100px 20px;
   display: flex;
   justify-content: center;
 }
 
 .container {
-  width: 80%;
+  width: 76%;
   max-width: 1300px;
   display: grid;
   align-items: center;

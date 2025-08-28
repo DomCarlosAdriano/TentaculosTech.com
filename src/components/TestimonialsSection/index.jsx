@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import ReactPaginate from "react-paginate";
 import styles from "./TestimonialsSection.module.css";
+import { Fade } from "react-awesome-reveal";
 
 const testimonials = [
   {
@@ -66,54 +67,61 @@ export default function TestimonialsSection() {
 
   return (
     <section className={styles.section}>
-      <p className={styles.subtitle}>TESTIMONIAL</p>
-      <h2 className={styles.title}>
-        WHAT MY <span>CLIENTS</span> SAY
-      </h2>
-
-      <div className={styles.grid}>
-        {currentItems.map((t) => (
-          <div
-            key={t.id}
-            className={`${styles.card} ${t.highlight ? styles.highlight : ""}`}
-            style={{ background: t.bg }}
-          >
-            <div className={styles.cardHeader}>
-              <img src={t.image} alt={t.name} className={styles.avatar} />
-              <div>
-                <h3>{t.name}</h3>
-                <p>{t.role}</p>
+      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+        <p className={styles.subtitle}>TESTIMONIAL</p>
+        <h2 className={styles.title}>
+          WHAT MY <span>CLIENTS</span> SAY
+        </h2>
+      </Fade>
+      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+        <div className={styles.grid}>
+          {currentItems.map((t) => (
+            <div
+              key={t.id}
+              className={`${styles.card} ${
+                t.highlight ? styles.highlight : ""
+              }`}
+              style={{ background: t.bg }}
+            >
+              <div className={styles.cardHeader}>
+                <img src={t.image} alt={t.name} className={styles.avatar} />
+                <div>
+                  <h3>{t.name}</h3>
+                  <p>{t.role}</p>
+                </div>
               </div>
+              <p className={styles.text}>{t.text}</p>
             </div>
-            <p className={styles.text}>{t.text}</p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Fade>
 
-      {/* Paginação */}
-      <ReactPaginate
-        breakLabel="…"
-        nextLabel="→"
-        previousLabel="←"
-        pageRangeDisplayed={2}
-        marginPagesDisplayed={1}
-        pageCount={pageCount}
-        onPageChange={(e) => setCurrentPage(e.selected)}
-        forcePage={currentPage}
-        renderOnZeroPageCount={null}
-        // CSS
-        containerClassName={styles.pagination}
-        pageClassName={styles.pageItem}
-        pageLinkClassName={styles.pageLink}
-        previousClassName={styles.pageItem}
-        previousLinkClassName={styles.pageLink}
-        nextClassName={styles.pageItem}
-        nextLinkClassName={styles.pageLink}
-        breakClassName={styles.pageItem}
-        breakLinkClassName={styles.pageLink}
-        activeClassName={styles.active}
-        disabledClassName={styles.disabled}
-      />
+      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+        {/* Paginação */}
+        <ReactPaginate
+          breakLabel="…"
+          nextLabel="→"
+          previousLabel="←"
+          pageRangeDisplayed={2}
+          marginPagesDisplayed={1}
+          pageCount={pageCount}
+          onPageChange={(e) => setCurrentPage(e.selected)}
+          forcePage={currentPage}
+          renderOnZeroPageCount={null}
+          // CSS
+          containerClassName={styles.pagination}
+          pageClassName={styles.pageItem}
+          pageLinkClassName={styles.pageLink}
+          previousClassName={styles.pageItem}
+          previousLinkClassName={styles.pageLink}
+          nextClassName={styles.pageItem}
+          nextLinkClassName={styles.pageLink}
+          breakClassName={styles.pageItem}
+          breakLinkClassName={styles.pageLink}
+          activeClassName={styles.active}
+          disabledClassName={styles.disabled}
+        />
+      </Fade>
     </section>
   );
 }
