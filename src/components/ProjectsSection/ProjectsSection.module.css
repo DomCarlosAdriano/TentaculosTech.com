@@ -1,0 +1,122 @@
+.section {
+  /* background: #0a0024; */
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  width: 100vw;
+}
+
+.title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #a855f7; /* roxo destaque */
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #111319;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardText {
+  padding: 16px 18px 20px;
+}
+
+.cardText h3 {
+  font-size: 1.15rem;
+  margin: 0 0 6px;
+}
+
+.cardText p {
+  font-size: 0.9rem;
+  color: #bfc3cf;
+  margin: 0;
+}
+
+/* PAGINAÇÃO (react-paginate) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 40px auto 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.pageItem { /* li */ }
+
+.pageLink { /* a */
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #3a3a48;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: all .2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pageItem:hover .pageLink {
+  border-color: #a855f7;
+  color: #a855f7;
+}
+
+.active .pageLink {
+  background: #a855f7;
+  border-color: #a855f7;
+  color: #0b032d;
+}
+
+.disabled .pageLink {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .title { font-size: 1.7rem; }
+}
+
+@media (max-width: 520px) {
+  .section { padding: 56px 16px; }
+  .title { font-size: 1.5rem; }
+  .pageLink { padding: 8px 12px; }
+}

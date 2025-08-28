@@ -1,0 +1,199 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  max-height:750px ;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  gap: 2rem;
+  color: #ECF0F1;
+}
+
+.animationHero {
+  width: 50%;
+  height: 500px;
+}
+
+.content {
+  margin: auto;
+  width: 76%;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textHero {
+  font-family: "Rajdhani", sans-serif;
+  width: 50%;
+  margin-top: -100px;
+}
+
+.circleShodow{
+  background-image: url("/testes.svg");
+  background-size:contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: -220px;
+  z-index: -40;
+  opacity: 1;
+
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #D9BBF7; /* roxo claro */
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.7rem;
+  color: #ECF0F1;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #95A5A6;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+/* 1200px ou mais (Desktops grandes) */
+@media (min-width: 1200px) {
+
+
+}
+
+/* 1024px - 1199px (Desktops) */
+@media (max-width: 1024px) {
+.hero {
+  max-height: 650px;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 1;
+
+}
+
+.text {
+  font-size: 1rem;
+}
+
+
+.primaryBtn, .secondaryBtn  {
+  padding: 0.8rem 1.1rem;
+  font-size: 0.7rem;
+}
+
+}
+
+/* 768px - 1023px (Tablets) */
+@media (max-width: 850px) {
+
+  .hero {
+  max-height: 980px;
+}
+
+.content {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.animationHero {
+  width: 670px;
+}
+
+
+
+}
+
+/* 600px - 767px (Tablets pequenos e Smartphones em paisagem) */
+@media (max-width: 600px) {
+  .hero{
+     
+     max-height: 750px;
+     
+  }
+
+  .animationHero {
+    width: 350px;
+  }
+
+  .textHero {
+  width: fit-content;
+}
+
+  
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1;
+
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+
+.primaryBtn, .secondaryBtn  {
+  padding: 0.8rem 1.1rem;
+  font-size: 0.7rem;
+}
+
+}
+
+/* 480px - 599px (Smartphones) */
+@media (max-width:  380px) {
+  .subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 0.9rem;
+    line-height: 1;
+
+  }
+
+  .text {
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .content{
+    gap: 1rem;
+  }
+}

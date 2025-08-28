@@ -1,0 +1,140 @@
+.section {
+  /* background: #0a0024; */
+  padding: 80px 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100vw;
+}
+
+.subtitle {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.9rem;
+  color: #a855f7;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.title span {
+  color: #FFFFFF; /* Destaque vermelho */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  color: #a855f7;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: solid 2px #a855f7;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.highlight {
+  color: #a855f7;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.text {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* PAGINAÇÃO */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin: 40px auto 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.pageLink {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.pageItem:hover .pageLink {
+  border-color: #a855f7;
+  color: #fff;
+}
+
+.active .pageLink {
+  background: #a855f7;
+  color: #fff;
+}
+
+.disabled .pageLink {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}

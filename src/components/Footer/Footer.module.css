@@ -1,0 +1,76 @@
+.footer {
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 14px;
+    width: 100vw;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #6a0dad; /* Roxo */
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Responsivo */
+  gap: 15px;
+}
+
+.copy {
+  flex: 1;
+  min-width: 200px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social a {
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
