@@ -9,14 +9,14 @@ const ProcessSection = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         {/* Imagem */}
-        <div className={styles.imageWrapper}>
+        {/* <div className={styles.imageWrapper}>
           <Lottie
             animationData={animacao}
             loop={true}
             autoplay={true}
             style={{ width: "100%", height: "100%" }}
           />
-        </div>
+        </div> */}
 
         {/* Texto e Etapas */}
         <div className={styles.textContent}>
