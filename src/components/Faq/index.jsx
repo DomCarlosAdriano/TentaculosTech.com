@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./faq.module.css";
+import styles from "./Faq.module.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
