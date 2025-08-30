@@ -193,6 +193,12 @@
 
 /* 480px - 599px (Smartphones) */
 @media (max-width:  380px) {
+ 
+ .hero{
+  height: 100%;
+  }
+
+
   .subtitle {
     font-size: 0.8rem;
     margin-bottom: 0.9rem;
