@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
-  gap: 2rem;
+  
   color: #ECF0F1;
 }
 
@@ -127,6 +127,20 @@
  
 }
 
+.textHero {
+  width: 100%;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle, .title, .text  {
+ text-align: center;
+}
+
 .animationHero {
   width: 670px;
 }
@@ -138,8 +152,8 @@
 /* 600px - 767px (Tablets pequenos e Smartphones em paisagem) */
 @media (max-width: 600px) {
   .hero{
-     
-     max-height: 750px;
+     max-height: 900px;
+  
      
   }
 
@@ -149,7 +163,10 @@
 
   .textHero {
   width: fit-content;
+  margin-top: 25px;
+  margin-bottom: 0px;
 }
+
 
   
 .subtitle {

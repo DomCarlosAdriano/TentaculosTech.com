@@ -25,9 +25,15 @@ const PlansSection = () => {
         {/* Cards à direita */}
         <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
           <div className={styles.cardsGrid}>
-            <div className={`${styles.card} ${styles.cardLarge}`}></div>
-            <div className={styles.card}></div>
-            <div className={styles.card}></div>
+            <div className={`${styles.card} ${styles.cardLarge}`}>
+              <img className={styles.img} src="tw.png" />
+            </div>
+            <div className={styles.card}>
+              <img className={styles.img} src="website.png" />
+            </div>
+            <div className={styles.card}>
+              <img className={styles.img} src="trafego01.png" />
+            </div>
           </div>
         </Fade>
       </div>
