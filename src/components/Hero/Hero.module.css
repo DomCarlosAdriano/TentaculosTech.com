@@ -155,8 +155,10 @@
 @media (max-width: 600px) {
   .hero{
      max-height: 900px;
-  
-     
+  }
+
+  .content{
+    width: 90%;
   }
 
   .animationHero {

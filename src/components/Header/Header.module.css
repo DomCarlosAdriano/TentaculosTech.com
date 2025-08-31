@@ -97,7 +97,7 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .container {
     padding: 1rem;
   }
