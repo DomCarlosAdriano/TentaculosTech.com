@@ -61,7 +61,7 @@ const VSLSection = ({ menuOpen }) => {
                 <video
                   ref={videoRef}
                   className={styles.video}
-                  src="/video.mp4"
+                  src="/video.webm"
                   controls
                   poster=""
                   preload="metadata"
