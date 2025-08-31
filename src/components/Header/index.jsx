@@ -17,12 +17,12 @@ const Header = () => {
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>
-            <li><a href="#home" className={styles.navLink}>Home</a></li>
-            <li><a href="#sobre" className={styles.navLink}>Sobre</a></li>
-            <li><a href="#planos" className={styles.navLink}>Planos</a></li>
-            <li><a href="#portfolio" className={styles.navLink}>Portfólio</a></li>
-            <li><a href="#processo" className={styles.navLink}>Processo</a></li>
-            <li><a href="#faq" className={styles.navLink}>FAQ</a></li>
+            <li><a href="#home" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Home</a></li>
+            <li><a href="#sobre" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
+            <li><a href="#planos" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Planos</a></li>
+            <li><a href="#portfolio" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Portfólio</a></li>
+            <li><a href="#processo" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Processo</a></li>
+            <li><a href="#faq" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>FAQ</a></li>
           </ul>
         </nav>
 
