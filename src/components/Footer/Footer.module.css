@@ -2,17 +2,13 @@
   color: #fff;
   padding: 20px 40px;
   font-size: 14px;
-    width: 100vw;
-}
-
-.line {
-  border: none;
-  border-top: 1px solid #6a0dad; /* Roxo */
-  margin-bottom: 15px;
+  width: 100vw;
   font-family: "Roboto", sans-serif;
+  border-top: 1px solid #6a0dad;
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

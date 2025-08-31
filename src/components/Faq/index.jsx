@@ -34,7 +34,7 @@ const FAQSection = ({ menuOpen }) => {
   };
 
   return (
-    <section className={styles.section} style={{ display: menuOpen ? "none" : "flex" }}>
+    <section id="faq" className={styles.section} style={{ display: menuOpen ? "none" : "flex" }}>
       <div className={styles.container}>
         <Fade direction="up" delay={150} triggerOnce>
           <div className={styles.header}>

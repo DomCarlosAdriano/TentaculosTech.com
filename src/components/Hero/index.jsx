@@ -9,6 +9,7 @@ export default function Hero({ menuOpen }) {
     <section
       className={styles.hero}
       style={{ display: menuOpen ? "none" : "flex" }}
+      id="home"
     >
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <div className={styles.content}>

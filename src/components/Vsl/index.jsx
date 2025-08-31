@@ -36,6 +36,7 @@ const VSLSection = ({ menuOpen }) => {
 
   return (
     <section
+    id="SobreNos"
       className={styles.vslSection}
       style={{ display: menuOpen ? "none" : "flex" }}
     >
@@ -43,7 +44,7 @@ const VSLSection = ({ menuOpen }) => {
         <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
           <div className={styles.textContainer}>
             <h2 className={styles.title}>
-              Transforme Sua Presença Digital e{" "}
+              Transforme Sua Presença Digital e <br/>
               <span className={styles.highlight}>Atraia Mais Clientes</span>
             </h2>
             <p className={styles.subtitle}>

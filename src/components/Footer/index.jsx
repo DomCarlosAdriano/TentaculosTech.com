@@ -11,14 +11,15 @@ import { Fade } from "react-awesome-reveal";
 
 const Footer = ({ menuOpen }) => {
   return (
-    <footer className={styles.footer}  style={{ display: menuOpen ? "none" : "flex" }}>
-      <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
-        <hr className={styles.line} />
-
+    <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
+      <footer
+        className={styles.footer}
+        style={{ display: menuOpen ? "none" : "flex" }}
+      >
         <div className={styles.container}>
           {/* Texto à esquerda */}
           <p className={styles.copy}>
-            © 2023 Protech, Inc. All rights reserved.
+            © 2025 TentaculosTech, Inc. All rights reserved.
           </p>
 
           {/* Links do meio */}
@@ -53,8 +54,8 @@ const Footer = ({ menuOpen }) => {
             </a>
           </div>
         </div>
-      </Fade>
-    </footer>
+      </footer>
+    </Fade>
   );
 };
 

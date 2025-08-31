@@ -68,7 +68,7 @@ export default function ProjectsSection({ menuOpen }) {
   }, [currentPage]);
 
   return (
-    <section className={styles.section} aria-label="Projetos recentes"  style={{ display: menuOpen ? "none" : "" }}>
+    <section id="portfolio" className={styles.section} aria-label="Projetos recentes"  style={{ display: menuOpen ? "none" : "" }}>
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <h2 className={styles.title}>
           A small selection of <span>recent projects</span>
