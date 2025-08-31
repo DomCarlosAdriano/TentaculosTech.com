@@ -1,15 +1,13 @@
 .hero {
   width: 100vw;
   height: 100vh;
-
   max-height:750px ;
- 
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
-  
   color: #ECF0F1;
+  z-index: 1;
 }
 
 .animationHero {
@@ -42,7 +40,7 @@
   position: absolute;
   top: 0;
   left: -220px;
-  z-index: -40;
+  z-index: -999;
   opacity: 1;
 
 }
@@ -143,6 +141,10 @@
 
 .animationHero {
   width: 670px;
+}
+
+.circleShodow{
+ display: none;
 }
 
 

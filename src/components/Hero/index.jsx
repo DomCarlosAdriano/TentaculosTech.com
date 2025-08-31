@@ -4,9 +4,12 @@ import animacao from "../../assets/animation.json";
 import GlowButton from "../GlowButton";
 import { Fade } from "react-awesome-reveal";
 
-export default function Hero() {
+export default function Hero({ menuOpen }) {
   return (
-    <section className={styles.hero}>
+    <section
+      className={styles.hero}
+      style={{ display: menuOpen ? "none" : "flex" }}
+    >
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <div className={styles.content}>
           <div className={styles.textHero}>
@@ -25,8 +28,7 @@ export default function Hero() {
             </p>
             <div className={styles.buttons}>
               <GlowButton style={{ cursor: "pointer" }}>
-                {" "}
-                Orçamento Gratuito{" "}
+                Orçamento Gratuito
               </GlowButton>
             </div>
             <div className={styles.circleShodow}></div>
@@ -45,3 +47,4 @@ export default function Hero() {
     </section>
   );
 }
+

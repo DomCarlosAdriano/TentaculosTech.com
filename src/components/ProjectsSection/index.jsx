@@ -54,7 +54,7 @@ const allProjects = [
   },
 ];
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ menuOpen }) {
   const [currentPage, setCurrentPage] = useState(0);
 
   // Quantos cards por página (2x2 como no layout)
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
   }, [currentPage]);
 
   return (
-    <section className={styles.section} aria-label="Projetos recentes">
+    <section className={styles.section} aria-label="Projetos recentes"  style={{ display: menuOpen ? "none" : "" }}>
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <h2 className={styles.title}>
           A small selection of <span>recent projects</span>

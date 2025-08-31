@@ -3,9 +3,12 @@ import styles from "./PlansSection.module.css";
 import GlowButton from "../GlowButton";
 import { Fade } from "react-awesome-reveal";
 
-const PlansSection = () => {
+const PlansSection = ({ menuOpen }) => {
   return (
-    <section className={styles.section}>
+    <section
+      className={styles.section}
+      style={{ display: menuOpen ? "none" : "flex" }}
+    >
       <div className={styles.container}>
         {/* Texto à esquerda */}
         <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>

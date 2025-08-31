@@ -52,7 +52,7 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ menuOpen }) {
   const [currentPage, setCurrentPage] = useState(0);
 
   // Quantos cards por página
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
   }, [currentPage]);
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section}  style={{ display: menuOpen ? "none" : "" }}>
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <p className={styles.subtitle}>TESTIMONIAL</p>
         <h2 className={styles.title}>

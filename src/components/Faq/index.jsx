@@ -3,7 +3,7 @@ import styles from "./Faq.module.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
-const FAQSection = () => {
+const FAQSection = ({ menuOpen }) => {
   const [openIndex, setOpenIndex] = useState(); // Primeira pergunta aberta por padrão
 
   const faqData = [
@@ -34,7 +34,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} style={{ display: menuOpen ? "none" : "flex" }}>
       <div className={styles.container}>
         <Fade direction="up" delay={150} triggerOnce>
           <div className={styles.header}>

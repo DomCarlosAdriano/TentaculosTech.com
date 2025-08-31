@@ -5,32 +5,39 @@ import { Fade } from "react-awesome-reveal";
 import animacao from "../../assets/Scene.json";
 import Lottie from "lottie-react";
 
-const ProcessSection = () => {
+const ProcessSection = ({ menuOpen }) => {
   const processSteps = [
     {
       icon: FaTruck,
       title: "Solicitação de Orçamento",
-      description: "Entre em contato e conte o que você precisa: criação de site, gestão de tráfego pago ou nosso plano premium. Em poucas horas você recebe uma proposta personalizada e transparente."
+      description:
+        "Entre em contato e conte o que você precisa: criação de site, gestão de tráfego pago ou nosso plano premium. Em poucas horas você recebe uma proposta personalizada e transparente.",
     },
     {
       icon: FaTrophy,
       title: "Elaboração do Contrato",
-      description: "Após aprovar a proposta, formalizamos tudo para sua segurança. Você recebe um contrato claro, com prazos, valores e garantias definidas."
+      description:
+        "Após aprovar a proposta, formalizamos tudo para sua segurança. Você recebe um contrato claro, com prazos, valores e garantias definidas.",
     },
     {
       icon: FaTools,
       title: "Criação e Entrega",
-      description: "Colocamos a mão na massa! Criamos seu site profissional e/ou configuramos campanhas de tráfego pago, sempre mantendo você atualizado."
+      description:
+        "Colocamos a mão na massa! Criamos seu site profissional e/ou configuramos campanhas de tráfego pago, sempre mantendo você atualizado.",
     },
     {
       icon: FaChartLine,
       title: "Sucesso",
-      description: "Com seu projeto no ar e campanhas rodando, você começa a atrair visitantes qualificados e gerar mais resultados para o seu negócio."
-    }
+      description:
+        "Com seu projeto no ar e campanhas rodando, você começa a atrair visitantes qualificados e gerar mais resultados para o seu negócio.",
+    },
   ];
 
   return (
-    <section className={styles.section}>
+    <section
+      className={styles.section}
+      style={{ display: menuOpen ? "none" : "flex" }}
+    >
       <div className={styles.container}>
         {/* Imagem - Descomente quando necessário */}
         {/* <div className={styles.imageWrapper}>

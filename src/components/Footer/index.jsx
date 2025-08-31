@@ -9,9 +9,9 @@ import {
 } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
-const Footer = () => {
+const Footer = ({ menuOpen }) => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer}  style={{ display: menuOpen ? "none" : "flex" }}>
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <hr className={styles.line} />
 

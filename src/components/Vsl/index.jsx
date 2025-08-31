@@ -3,7 +3,7 @@ import styles from "./Vsl.module.css";
 import GlowButton from "../GlowButton";
 import { Fade } from "react-awesome-reveal";
 
-const VSLSection = () => {
+const VSLSection = ({ menuOpen }) => {
   const videoRef = useRef(null);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -35,7 +35,10 @@ const VSLSection = () => {
   }, []);
 
   return (
-    <section className={styles.vslSection}>
+    <section
+      className={styles.vslSection}
+      style={{ display: menuOpen ? "none" : "flex" }}
+    >
       <div className={styles.container}>
         <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
           <div className={styles.textContainer}>
@@ -54,7 +57,6 @@ const VSLSection = () => {
         <Fade direction="up" delay={300} triggerOnce>
           <div className={styles.videoContainer}>
             <div className={styles.browserMock}>
-            
               <div className={styles.videoWrapper}>
                 <video
                   ref={videoRef}
@@ -67,12 +69,17 @@ const VSLSection = () => {
                 >
                   Seu navegador não suporta o elemento de vídeo.
                 </video>
-                
+
                 {!isVideoLoaded && (
                   <div className={styles.videoPlaceholder}>
                     <div className={styles.playButton}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z"/>
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M8 5v14l11-7z" />
                       </svg>
                     </div>
                   </div>
@@ -81,8 +88,6 @@ const VSLSection = () => {
             </div>
           </div>
         </Fade>
-
-
       </div>
     </section>
   );
