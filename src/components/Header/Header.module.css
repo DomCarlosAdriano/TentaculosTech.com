@@ -1,171 +1,213 @@
-.header {
-  padding: 1.2rem 0;
+/* Header.module.css */
+.headerh {
+  background-color: #0B0D17;
   position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  top: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+
+
 }
 
-.container {
+.containerHeader {
   width: 76%;
-  max-width: 100rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+
 }
 
-.logoContainer {
+.logo h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
   display: flex;
   align-items: center;
 }
 
-.logoImg {
-  height: 30px; /* Logo menor em telas pequenas */
-  max-width: 100%;
-}
-
-.logoText {
-  color: #ECF0F1;
-  font-size: 1.5rem; /* Ajuste na fonte para telas grandes */
-  font-weight: bold;
-}
-
-.navDesktop {
+.navList {
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   gap: 2rem;
 }
 
-.navDesktop a {
-  color: #ECF0F1;
-  font-size: 1.1rem;
+.navLink {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navDesktop a:hover {
-  color: #a855f7; /* Efeito de hover */
-}
-
-.sellButton {
-  background: linear-gradient(90deg, #a855f7, #7c3aed);
-  color: #ECF0F1;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.7rem 1.5rem; /* Maior padding em telas grandes */
   font-size: 1rem;
-  transition: background 0.3s ease;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
 }
 
-.sellButton:hover {
-  background: linear-gradient(90deg, #7c3aed, #a855f7); /* Efeito no hover */
+.navLink:hover {
+  color: #a855f7;
+}
+
+.ctaContainer {
+  display: flex;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #a855f7, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+}
+
+.ctaButton:hover {
+  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
 }
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  background: none;
+  border: none;
   cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background: white;
-  border-radius: 3px;
-  transition: transform 0.3s ease;
-  
-}
-
-/* Menu mobile */
-.navMobile {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 100vh;
-  left: 0;
-  background: #0B0D17;
-
-  display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1.5rem;
-  transform: translateY(-100%); /* Inicialmente escondido */
-  transition: transform 0.3s ease-in-out;
+  gap: 4px;
+  padding: 8px;
 }
 
-.navMobile.open {
-  transform: translateY(0); /* Quando aberto, a transição é suave */
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-.closeButton{
-  text-align: end;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.navMobile a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.navMobile a:hover {
-  color: #a855f7;
-}
-
-.aContatoMobile{
-  color:#ECF0F1 ;
-}
-
-/* Responsividade */
-@media (max-width: 1024px) {
-  .logoText {
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte da logo para tablets */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
   }
 
-  .navDesktop {
-    gap: 1.5rem; /* Menos espaçamento entre os links */
-  }
-
-  .sellButton {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .navDesktop {
-    display: none; /* Esconde menu desktop em telas pequenas */
-  }
-
-  .sellButton {
-    display: none; /* Esconde botão em telas pequenas */
+  .logo h1 {
+    font-size: 1.3rem;
   }
 
   .hamburger {
-    display: flex; /* Exibe o menu hamburguer */
+    display: flex;
   }
 
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0B0D17;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-top: 1px solid #444;
+  }
 
+  .navOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+  }
+
+  .navLink {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+    width: 100%;
+  }
+
+  .navLink:last-child {
+    border-bottom: none;
+  }
+
+  .ctaContainer {
+    display: none;
+  }
+
+  /* Hamburger animation */
+  .navOpen ~ .hamburger .hamburgerLine:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navOpen ~ .hamburger .hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navOpen ~ .hamburger .hamburgerLine:last-child {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
 }
 
-@media (max-width: 480px) {
-  .logoImg {
-    height: 25px; /* Logo ainda menor em dispositivos muito pequenos */
+/* Tablet Styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding: 1rem 1.5rem;
   }
 
-  .logoText {
-    font-size: 1rem; /* Logo com texto menor */
+  .navList {
+    gap: 1.5rem;
   }
 
-  .navMobile a {
-    font-size: 1rem; /* Ajuste no tamanho das fontes do menu */
+  .navLink {
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .container {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* Mobile menu with CTA button */
+@media (max-width: 768px) {
+  .navOpen .navList::after {
+    content: '';
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .navOpen .navList::after {
+    content: 'Fale conosco';
+    background: linear-gradient(135deg, #a855f7, #8b5cf6);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 }

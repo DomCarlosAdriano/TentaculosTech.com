@@ -3,10 +3,15 @@ import styles from "./Hero.module.css";
 import animacao from "../../assets/animation.json";
 import GlowButton from "../GlowButton";
 import { Fade } from "react-awesome-reveal";
+import Header from "../Header";
+import { useState } from "react";
 
-export default function Hero({ menuOpen }) {
+
+export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <section
+    <>
+      <section
       className={styles.hero}
       style={{ display: menuOpen ? "none" : "flex" }}
       id="home"
@@ -46,6 +51,8 @@ export default function Hero({ menuOpen }) {
         </div>
       </Fade>
     </section>
+    </>
+  
   );
 }
 
