@@ -192,7 +192,7 @@
 }
 
 /* Estilo temporário para o GlowButton - remova quando importar o seu */
-.glowButton {
+/* .glowButton {
   background: linear-gradient(135deg, #7B24E2 0%, #9D4EDD 100%);
   border: none;
   border-radius: 12px;
@@ -213,9 +213,10 @@
   box-shadow: 0 10px 30px rgba(123, 36, 226, 0.5);
 }
 
+
 .glowButton:active {
   transform: translateY(0);
-}
+} */
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -245,9 +246,25 @@
 }
 
 @media (max-width: 480px) {
+
+  .wrapper {
+    width: 95%;
+  }
   .container {
     padding: 40px 10px;
   }
+
+  .title {
+  font-size: 2rem;;
+ 
+}
+
+.subtitle {
+  font-size:  1rem;
+  line-height: 1.2;
+ 
+
+}
   
   .planCard {
     padding: 25px 20px;
