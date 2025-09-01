@@ -7,50 +7,58 @@ const allProjects = [
   {
     id: 1,
     title: "Site Institucional",
-    category: "Site Completo para apresentar sua empresa",
-    image: "../../../public/project01.webp",
+    category: "Desenvolvemos sites institucionais completos para empresas que desejam se destacar no ambiente digital. Um site institucional fortalece a presença online, transmite credibilidade, facilita o contato com clientes e ajuda a gerar novas oportunidades de negócio.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 2,
-    title: "Landing Page",
-    category: "Landing Page",
-    image: "../../../public/project01.webp",
+    title: "Site Corporativo Completo",
+    category: "Criamos sites corporativos completos, pensados para transmitir profissionalismo e fortalecer a imagem da sua empresa na web. Com design moderno e funcionalidades estratégicas, seu negócio se conecta melhor com clientes e parceiros.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 3,
-    title: "Pagina de Captura de Leads",
-    category: "Pagina de vendas",
-    image: "../../../public/project01.webp",
+    title: "Landing Page",
+    category: "Landing pages otimizadas para resultados: design atraente, conteúdo persuasivo e integração com ferramentas de marketing para maximizar suas oportunidades de negócio.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 4,
-    title: "Juice Website for Creatives",
-    category: "Show Project",
-    image: "../../../public/project01.webp",
+    title: "Página de Captura de Leads",
+    category: "Criamos páginas de captura de leads focadas em gerar novos contatos qualificados para o seu negócio, transformando visitantes em potenciais clientes.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 5,
-    title: "E-commerce Moderno",
-    category: "Web, UI/UX",
-    image: "../../../public/project01.webp",
+    title: "Página de Vendas",
+    category: "Desenvolvemos páginas de vendas que convertem visitantes em clientes, com design atrativo, textos persuasivos e estratégias que destacam seu produto ou serviço.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 6,
-    title: "App de Reservas",
-    category: "Apps, Product",
-    image: "../../../public/project01.webp",
+    title: "Hotsite de Eventos",
+    category: "Hotsites de eventos com design atrativo e funcionalidade completa, facilitando inscrições, divulgação e interação com seu público-alvo.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 7,
-    title: "Dashboard Analytics",
-    category: "Data, UI/UX",
-    image: "../../../public/project01.webp",
+    title: "Gestão de tráfego para geração de leads",
+    category: "Oferecemos gestão de tráfego estratégica para atrair visitantes qualificados, transformando cliques em leads e potencializando seus resultados de marketing.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
   {
     id: 8,
-    title: "Landing Page Performance",
-    category: "SEO, Web",
-    image: "../../../public/project01.webp",
+    title: "Gestão de tráfego por funil completo",
+    category: "Oferecemos gestão de tráfego estratégica por funil completo, guiando seus leads desde o primeiro contato até a conversão, maximizando resultados em todas as etapas.",
+    image:
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
   },
 ];
 
@@ -68,10 +76,15 @@ export default function ProjectsSection({ menuOpen }) {
   }, [currentPage]);
 
   return (
-    <section id="portfolio" className={styles.section} aria-label="Projetos recentes"  style={{ display: menuOpen ? "none" : "" }}>
+    <section
+      id="portfolio"
+      className={styles.section}
+      aria-label="Projetos recentes"
+      style={{ display: menuOpen ? "none" : "" }}
+    >
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>
         <h2 className={styles.title}>
-          A small selection of <span>recent projects</span>
+          Conheça um Pouco do <span>Nosso Trabalho</span>
         </h2>
       </Fade>
       <Fade direction="up" delay={150} cascade damping={0.1} triggerOnce>

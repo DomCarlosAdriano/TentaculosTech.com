@@ -61,6 +61,7 @@
 .cardText p {
   font-size: 0.9rem;
   color: #bfc3cf;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -94,7 +95,7 @@
 
 .pageItem:hover .pageLink {
   border-color: #a855f7;
-  color: #a855f7;
+  color: #FFFFFF;
 }
 
 .active .pageLink {
