@@ -157,7 +157,7 @@
 /* 600px - 767px (Tablets pequenos e Smartphones em paisagem) */
 @media (max-width: 600px) {
   .hero{
-     max-height: 900px;
+     max-height: 750px;
   }
 
   .content{
