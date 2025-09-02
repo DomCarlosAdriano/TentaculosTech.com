@@ -9,28 +9,28 @@ const allProjects = [
     title: "Site Institucional",
     category:
       "Desenvolvemos sites institucionais completos para empresas que desejam se destacar no ambiente digital. Um site institucional fortalece a presença online, transmite credibilidade, facilita o contato com clientes e ajuda a gerar novas oportunidades de negócio.",
-    image: "../../public/institucional.webp",
+    image: "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/institucional.webp?raw=true",
   },
   {
     id: 2,
     title: "Site Corporativo",
     category:
       "Criamos sites corporativos completos, pensados para transmitir profissionalismo e fortalecer a imagem da sua empresa na web. Com design moderno e funcionalidades estratégicas, seu negócio se conecta melhor com clientes e parceiros.",
-    image: "../../public/corporativo.webp",
+    image: "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/corporativo.webp?raw=true",
   },
   {
     id: 3,
     title: "Página de Captura de Leads",
     category:
       "Criamos páginas de captura de leads focadas em gerar novos contatos qualificados para o seu negócio, transformando visitantes em potenciais clientes.",
-    image: "../../public/captura.webp",
+    image: "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/captura.webp?raw=true",
   },
   {
     id: 4,
     title: "Landing Page",
     category:
       "Landing pages otimizadas para resultados: design atraente, conteúdo persuasivo e integração com ferramentas de marketing para maximizar suas oportunidades de negócio.",
-    image: "../../public/landingpage.webp",
+    image: "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/landingpage.webp?raw=true",
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const allProjects = [
     category:
       "Desenvolvemos páginas de vendas que convertem visitantes em clientes, com design atrativo, textos persuasivos e estratégias que destacam seu produto ou serviço.",
     image:
-      "../../public/paginadevendas.webp",
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/paginadevendas.webp?raw=true",
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ const allProjects = [
     category:
       "Hotsites de eventos com design atrativo e funcionalidade completa, facilitando inscrições, divulgação e interação com seu público-alvo.",
     image:
-      "../../public/evento.webp",
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/evento.webp?raw=true",
   },
   {
     id: 7,
