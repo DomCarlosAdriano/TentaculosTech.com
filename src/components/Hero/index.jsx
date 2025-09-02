@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import styles from "./Hero.module.css";
-import animacao from "../../assets/animation.json";
+import animacao from "../../assets/Scene02.json"
 import GlowButton from "../GlowButton";
 import { Fade } from "react-awesome-reveal";
 import Header from "../Header";
@@ -23,7 +23,7 @@ export default function Hero() {
               Sites que Vendem: Mais Clientes, Mais Faturamento
             </p>
             <h1 className={styles.title}>
-              Precisa de um Site Para Atrair Mais Clientes e Aumente Seu
+              Precisa Atrair Mais Clientes e Aumentar Seu
               Faturamento?
             </h1>
             <p className={styles.text}>

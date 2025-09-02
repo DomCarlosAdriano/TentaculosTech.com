@@ -7,58 +7,62 @@ const allProjects = [
   {
     id: 1,
     title: "Site Institucional",
-    category: "Desenvolvemos sites institucionais completos para empresas que desejam se destacar no ambiente digital. Um site institucional fortalece a presença online, transmite credibilidade, facilita o contato com clientes e ajuda a gerar novas oportunidades de negócio.",
-    image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+    category:
+      "Desenvolvemos sites institucionais completos para empresas que desejam se destacar no ambiente digital. Um site institucional fortalece a presença online, transmite credibilidade, facilita o contato com clientes e ajuda a gerar novas oportunidades de negócio.",
+    image: "../../public/institucional.webp",
   },
   {
     id: 2,
-    title: "Site Corporativo Completo",
-    category: "Criamos sites corporativos completos, pensados para transmitir profissionalismo e fortalecer a imagem da sua empresa na web. Com design moderno e funcionalidades estratégicas, seu negócio se conecta melhor com clientes e parceiros.",
-    image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+    title: "Site Corporativo",
+    category:
+      "Criamos sites corporativos completos, pensados para transmitir profissionalismo e fortalecer a imagem da sua empresa na web. Com design moderno e funcionalidades estratégicas, seu negócio se conecta melhor com clientes e parceiros.",
+    image: "../../public/corporativo.webp",
   },
   {
     id: 3,
-    title: "Landing Page",
-    category: "Landing pages otimizadas para resultados: design atraente, conteúdo persuasivo e integração com ferramentas de marketing para maximizar suas oportunidades de negócio.",
-    image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+    title: "Página de Captura de Leads",
+    category:
+      "Criamos páginas de captura de leads focadas em gerar novos contatos qualificados para o seu negócio, transformando visitantes em potenciais clientes.",
+    image: "../../public/captura.webp",
   },
   {
     id: 4,
-    title: "Página de Captura de Leads",
-    category: "Criamos páginas de captura de leads focadas em gerar novos contatos qualificados para o seu negócio, transformando visitantes em potenciais clientes.",
-    image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+    title: "Landing Page",
+    category:
+      "Landing pages otimizadas para resultados: design atraente, conteúdo persuasivo e integração com ferramentas de marketing para maximizar suas oportunidades de negócio.",
+    image: "../../public/landingpage.webp",
   },
   {
     id: 5,
     title: "Página de Vendas",
-    category: "Desenvolvemos páginas de vendas que convertem visitantes em clientes, com design atrativo, textos persuasivos e estratégias que destacam seu produto ou serviço.",
+    category:
+      "Desenvolvemos páginas de vendas que convertem visitantes em clientes, com design atrativo, textos persuasivos e estratégias que destacam seu produto ou serviço.",
     image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+      "../../public/paginadevendas.webp",
   },
   {
     id: 6,
     title: "Hotsite de Eventos",
-    category: "Hotsites de eventos com design atrativo e funcionalidade completa, facilitando inscrições, divulgação e interação com seu público-alvo.",
+    category:
+      "Hotsites de eventos com design atrativo e funcionalidade completa, facilitando inscrições, divulgação e interação com seu público-alvo.",
     image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+      "../../public/evento.webp",
   },
   {
     id: 7,
     title: "Gestão de tráfego para geração de leads",
-    category: "Oferecemos gestão de tráfego estratégica para atrair visitantes qualificados, transformando cliques em leads e potencializando seus resultados de marketing.",
+    category:
+      "Oferecemos gestão de tráfego estratégica para atrair visitantes qualificados, transformando cliques em leads e potencializando seus resultados de marketing.",
     image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+      "../../public/paginadevendas0.webp",
   },
   {
     id: 8,
     title: "Gestão de tráfego por funil completo",
-    category: "Oferecemos gestão de tráfego estratégica por funil completo, guiando seus leads desde o primeiro contato até a conversão, maximizando resultados em todas as etapas.",
+    category:
+      "Oferecemos gestão de tráfego estratégica por funil completo, guiando seus leads desde o primeiro contato até a conversão, maximizando resultados em todas as etapas.",
     image:
-      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/project01.webp?raw=true",
+      "../../public/paginadevendas0.webp",
   },
 ];
 
