@@ -5,8 +5,8 @@
 }
 
 .container {
-  width: 100%;
-  max-width: 1300px;
+  width: 76%;
+  max-width: 1200px;
   display: grid;
   align-items: center;
   gap: 60px;
