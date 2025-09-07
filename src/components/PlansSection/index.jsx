@@ -57,7 +57,7 @@ const PricingSection = ({ menuOpen }) => {
 
   return (
     <section
-      id="plans"
+      id="planos"
       className={styles.container}
       style={{ display: menuOpen ? "none" : "flex" }}
     >

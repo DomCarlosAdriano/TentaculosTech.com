@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -17,12 +18,78 @@ const Header = () => {
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>
-            <li><a href="#home" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Home</a></li>
-            <li><a href="#sobre" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
-            <li><a href="#planos" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Planos</a></li>
-            <li><a href="#portfolio" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Portfólio</a></li>
-            <li><a href="#processo" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>Processo</a></li>
-            <li><a href="#faq" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>FAQ</a></li>
+            <li>
+              <Link 
+                to="home" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="sobre" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sobre
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="planos" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Planos
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="portfolio" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Portfólio
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="processo" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Processo
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="faq" 
+                smooth={true} 
+                duration={500} 
+                offset={-70}
+                className={styles.navLink} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                FAQ
+              </Link>
+            </li>
           </ul>
         </nav>
 

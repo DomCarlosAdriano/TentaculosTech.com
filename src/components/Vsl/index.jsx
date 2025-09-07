@@ -36,7 +36,7 @@ const VSLSection = ({ menuOpen }) => {
 
   return (
     <section
-    id="SobreNos"
+    id="sobre"
       className={styles.vslSection}
       style={{ display: menuOpen ? "none" : "flex" }}
     >
