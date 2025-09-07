@@ -62,7 +62,7 @@ const allProjects = [
     category:
       "Oferecemos gestão de tráfego estratégica por funil completo, guiando seus leads desde o primeiro contato até a conversão, maximizando resultados em todas as etapas.",
     image:
-      "../../public/paginadevendas0.webp",
+      "../../public/mkt1.webp",
   },
 ];
 
