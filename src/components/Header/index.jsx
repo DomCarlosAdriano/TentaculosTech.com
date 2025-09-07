@@ -94,7 +94,7 @@ const Header = () => {
         </nav>
 
         <div className={styles.ctaContainer}>
-          <button className={styles.ctaButton}>Fale conosco</button>
+          <a href="https://wa.me/5582993647023" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>Fale conosco</a>
         </div>
 
         <button 

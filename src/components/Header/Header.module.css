@@ -71,6 +71,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+  text-decoration: none;
 }
 
 .ctaButton:hover {
