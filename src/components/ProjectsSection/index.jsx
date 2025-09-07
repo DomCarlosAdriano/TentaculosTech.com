@@ -54,7 +54,7 @@ const allProjects = [
     category:
       "Oferecemos gestão de tráfego estratégica para atrair visitantes qualificados, transformando cliques em leads e potencializando seus resultados de marketing.",
     image:
-      "../../public/paginadevendas0.webp",
+      "https://github.com/DomCarlosAdriano/TentaculosTech.com/blob/main/public/mtk2.webp?raw=true",
   },
   {
     id: 8,
